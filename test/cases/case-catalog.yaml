@@ -18,3 +18,11 @@ cases:
     status: todo
     file: test/cases/lint.test.ts
     source: generated
+
+  - id: build.missing-marker
+    lane: build
+    layer: L0
+    title: 故意缺失 @case 标记
+    status: ready
+    file: test/missing-marker.test.ts
+    owner: '@smoke'
